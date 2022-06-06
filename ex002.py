@@ -1,0 +1,10 @@
+wrd = input('Digite algo na tela: ')
+
+print('Seu tipo é: ', type(wrd))
+print('É um alfanumérico? ', wrd.isalnum())
+print('Tem espaços?', wrd.isspace())
+print('É alfabético? ',wrd.isalpha())
+print('É numérico? ',wrd.isnumeric())
+print('É tudo maiúsculo? ',wrd.isupper())
+print('É tudo minúsculo? ',wrd.islower())
+print('Está capitalizada? ', wrd.istitle())
