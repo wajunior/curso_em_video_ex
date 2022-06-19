@@ -1,3 +1,5 @@
+from time import sleep
+# meu metodo
 c = 1
 
 while c != 0:
@@ -35,3 +37,41 @@ while c != 0:
             print('Opção incorreta!')
 
 print('Saindo do programa')
+
+# metodo do professor
+num1 = int(input('Informe o primeiro valor: '))
+num2 = int(input('Informe o segundo valor: '))
+opção = 0
+
+while opção != 5:
+    print('''    [1] Somar
+    [2] Multiplicar
+    [3] Maior valor
+    [4] Novos numeros
+    [5] Sair do programa''')
+    opção = int(input('>>>>>> Opção desejada: '))
+
+    if opção == 1:
+        soma = num1 + num2
+        print('A soma de {} + {} = {}'.format(num1, num2, soma))
+    elif opção == 2:
+        prod = num1 * num2
+        print('A multiplicação entre {} x {} = {}'.format(num1, num2, prod))
+    elif opção == 3:
+        if num1 > num2:
+            maior = num1
+        else:
+            maior = num2
+        print('Entre {} e {} o maior valor é {}'.format(num1, num2, maior))
+    elif opção == 4:
+        print('Informe novos valores!')
+        num1 = int(input('Informe o primeiro valor: '))
+        num2 = int(input('Informe o segundo valor: '))
+    elif opção == 5:
+        print('Finalizando!')
+    else:
+        print('Opção incorreta, tente novamente!')
+    print('-=-' * 10)
+
+sleep(2)
+print('Volte sempre!')

@@ -1,10 +1,12 @@
+print('Gerador de PA')
+print('-=' * 10)
 a1 = int(input('Informe o primeiro termo: '))
 r = int(input('Informe a razão: '))
-n = 0
-c = 0
+t = a1
+cont = 1
 
-while c < 10:
-    n += a1 * r
-    print('{}'.format(n), end='->')
-    c += 1
+while cont <= 10:
+    print('{} -> '.format(t), end='')
+    t += r
+    cont += 1
 print('FIM')
